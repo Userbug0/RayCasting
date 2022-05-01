@@ -151,7 +151,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\Engine.cpp" />
+    <ClCompile Include="source\Light.cpp" />
+    <ClCompile Include="source\LightSource.cpp" />
+    <ClCompile Include="source\LineSegment.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\MainApp.cpp" />
+    <ClCompile Include="source\Movable.cpp" />
+    <ClCompile Include="source\Vector2d.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Engine.hpp" />
+    <ClInclude Include="source\Light.hpp" />
+    <ClInclude Include="source\LightSource.hpp" />
+    <ClInclude Include="source\LineSegment.hpp" />
+    <ClInclude Include="source\MainApp.hpp" />
+    <ClInclude Include="source\Movable.hpp" />
+    <ClInclude Include="source\Settings.hpp" />
+    <ClInclude Include="source\Vector2d.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
