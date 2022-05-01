@@ -151,20 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="source\Grid.cpp" />
-    <ClCompile Include="source\LightSource.cpp" />
-    <ClCompile Include="source\main.cpp" />
-    <ClCompile Include="source\MainApp.cpp" />
-    <ClCompile Include="source\MovAble.cpp" />
-    <ClCompile Include="source\Vector2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="source\Grid.h" />
-    <ClInclude Include="source\LightSource.h" />
-    <ClInclude Include="source\MainApp.h" />
-    <ClInclude Include="source\MovAble.h" />
-    <ClInclude Include="source\Settings.h" />
-    <ClInclude Include="source\Vector2.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
