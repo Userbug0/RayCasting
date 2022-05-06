@@ -29,10 +29,10 @@ public:
 	size_t  WorldToIndex(const Vector2& position) const;
 	Vector2 WorldToGrid(const Vector2& position) const;
 
-	enum class CellType { Default, Wall};
+	enum class CellType { Default, Wall };
 
 	void SetType(size_t index, const CellType& type) { cells[index].type = type; }
-	CellType GetType(size_t index)			   const { return cells[index].type; }
+	CellType GetType(size_t index) const             { return cells[index].type; }
 
 	struct Cell
 	{
@@ -53,4 +53,3 @@ private:
 	size_t m_width;
 	size_t m_height;
 };
-

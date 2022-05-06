@@ -67,7 +67,6 @@ void Grid::Draw(sf::RenderWindow* window)
 			rect.setPosition({pos.x, pos.y});
 			window->draw(rect);
 		}
-
 	}
 }
 
@@ -85,7 +84,7 @@ Vector2 Grid::IndexToWorld(size_t index) const
 	return m_position + Vector2(x, y);
 }
 
-// !!!
+
 Vector2 Grid::WorldToGrid(const Vector2& point) const
 {
 	float x = (point.x - m_position.x) / m_width * (float)m_cellSize;
@@ -93,7 +92,7 @@ Vector2 Grid::WorldToGrid(const Vector2& point) const
 	return Vector2(x, y);
 }
 
-// !!!
+
 size_t Grid::WorldToIndex(const Vector2& point) const
 {
 	return (int)(point.x - m_position.x) / m_cellSize % m_width + (int)(point.y - m_position.y) / m_cellSize * m_width;

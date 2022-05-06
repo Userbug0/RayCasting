@@ -20,12 +20,11 @@ void Scene3D::Draw(sf::RenderWindow* window, const Ray& ray, const Vector2& sigh
 	sf::RectangleShape rect({ m_unitWidth, GAME_HEIGHT - (ray.length / m_maxRayLength * GAME_HEIGHT) });
 	rect.setPosition({ worldX, (GAME_HEIGHT - rect.getSize().y) / 2 });
 
-	uint8_t color = 255 - (ray.length / m_maxRayLength * 255);
+	uint8_t color = 255 - (int)(ray.length / m_maxRayLength * 255);
 	rect.setFillColor({ color, color, color });
 
 	window->draw(rect);
 }
-
 
 
 SceneMap::SceneMap(Grid* map, const Light& light, const sf::Color& lineColor)

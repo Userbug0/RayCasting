@@ -14,7 +14,7 @@ MainApp::MainApp()
 	m_Grid = new Grid({0, 0}, 20);
 	initWalls();
 
-	m_Player = new LightSource(150, m_Grid, Light(MAP_WIDTH), M_PI / 2, 80);
+	m_Player = new LightSource(150, m_Grid, Light(MAP_WIDTH), M_PI / 3, 100);
 }
 
 
