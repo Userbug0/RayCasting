@@ -2,12 +2,6 @@
 #include "Settings.h"
 
 
-const sf::Color Grid::DefaultColor = sf::Color::White;
-const sf::Color Grid::DefaultOutlineColor = sf::Color::Black;
-const sf::Color Grid::WallColor = sf::Color::Black;
-const sf::Color Grid::OutlineWallColor = sf::Color::White;
-
-
 Grid::Grid(size_t cellSize)
 	: m_cellSize(cellSize)
 {
@@ -65,7 +59,6 @@ void Grid::Draw(sf::RenderWindow* window)
 			rect.setPosition({pos.x, pos.y});
 			window->draw(rect);
 		}
-
 	}
 }
 

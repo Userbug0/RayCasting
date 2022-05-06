@@ -39,10 +39,10 @@ public:
 		sf::Color color = Grid::DefaultColor;
 	};
 
-	const static sf::Color DefaultColor;
-	const static sf::Color DefaultOutlineColor;
-	const static sf::Color WallColor;
-	const static sf::Color OutlineWallColor;
+	static constexpr const sf::Color& DefaultColor = sf::Color::White;
+	static constexpr const sf::Color& DefaultOutlineColor = sf::Color::Black;
+	static constexpr const sf::Color& WallColor = sf::Color::Black;
+	static constexpr const sf::Color& OutlineWallColor = sf::Color::White;
 
 private:
 	std::vector<Cell> cells;
